@@ -1,38 +1,45 @@
 const data = [
   {
     id: 1,
-    name: "Chronograph Analogue Men's Luxury Watch ",
+    name: "Chronograph Analogue  ",
     img: "https://m.media-amazon.com/images/I/61EaZ-1IcmL._AC_UL400_.jpg",
-    price: 19694,
+    price: 1200,
     cat: "Premium",
   },
   {
     id: 2,
-    name: "Men Small Dial Chronograph, Fashion Multifunction Analog ",
+    name: "Dial Chronograph,Analog ",
     img: "https://m.media-amazon.com/images/I/61J5Ml6tJJL._AC_UL400_.jpg",
-    price: 1000,
-    cat: "Dress",
+    price: 100,
+    cat: "Premium",
   },
   {
     id: 3,
-    name: "Edifice Chronograph Multi-Colour Dial Men's Watch-EFR",
+    name: "Edifice Chronograph",
     img: "https://m.media-amazon.com/images/I/61o81olOLOL._AC_UL400_.jpg",
-    price: 1000,
+    price: 300,
     cat: "Dress",
   },
   {
     id: 4,
-    name: "VILEN Edific Full Black Golden Dial Luxury Chronograph Watc ",
+    name: "VILEN Edific",
     img: "https://m.media-amazon.com/images/I/71eBNOs+ZAL._AC_UL400_.jpg",
-    price: 1000,
+    price: 50,
     cat: "Dress",
   },
   {
     id: 5,
-    name: "Analog Blue Dial Men's Watch-SRPD51K1 ",
+    name: "Analog Blue",
     img: "https://m.media-amazon.com/images/I/61GLIs+hmHL._AC_UL400_.jpg",
-    price: 1000,
-    cat: "Dress",
+    price: 500,
+    cat: "Premium",
+  },
+  {
+    id: 6,
+    name: "Analog Blue",
+    img: "https://m.media-amazon.com/images/I/61GLIs+hmHL._AC_UL400_.jpg",
+    price: 600,
+    cat: "Premium",
   },
 ];
 
@@ -50,7 +57,7 @@ const displayProducts = (filteredProducts) => {
           <div class="product">
                          <img src=${product.img} alt="">
                          <span class="name">${product.name}</span>
-                         <span class="priceText">${product.price}</span>
+                         <span class="priceText">$${product.price}</span>
                     </div>
 
           `
@@ -80,16 +87,36 @@ const setCategories = () => {
     }),
   ];
 
-  categoriesContainer.innerHTML = categories.map(cat =>`
+  categoriesContainer.innerHTML = categories
+    .map(
+      (cat) => `
      <span class="cat">${cat}</span>
-  `).join("")
+  `
+    )
+    .join("");
 
-  categoriesContainer.addEventListener("click", (e)=>{
-     const selectedCat = e.target.textContent;
+  categoriesContainer.addEventListener("click", (e) => {
+    const selectedCat = e.target.textContent;
 
-     selectedCat === "All" ? displayProducts(data) : displayProducts(data.filter((item)=> item.cat === selectedCat));
-     
-  })
+    selectedCat === "All"
+      ? displayProducts(data)
+      : displayProducts(data.filter((item) => item.cat === selectedCat));
+  });
 };
+const setPrice = () => {
+  const priceList = data.map((item) => item.price);
+  const minPrice = Math.min(...priceList);
+  const maxPrice = Math.max(...priceList);
 
+  priceRange.min = minPrice;
+  priceRange.max = maxPrice;
+  priceRange.value = maxPrice;
+  priceValue.textContent = "$" + maxPrice;
+
+  priceRange.addEventListener("input", (e) => {
+    priceValue.textContent = "$" + e.target.value;
+    displayProducts(data.filter((item) => item.price <= e.target.value));
+  });
+};
 setCategories();
+setPrice();
