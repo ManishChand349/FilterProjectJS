@@ -1,70 +1,65 @@
-
-.container{
-     display: flex;
-     padding: 50px;
+.container {
+  display: flex;
+  padding: 50px;
 }
 
-.leftMenu{
-     flex: 1;
+.leftMenu {
+  flex: 1;
 }
 
-.content{
-     flex: 4;
+.content {
+  flex: 4;
 }
 
-h1{
-     font-size: 30px;
-     color: #555;
-     font-weight: 300;
+h1 {
+  font-size: 30px;
+  color: #555;
+  font-weight: 300;
 }
-.cats{
-     display: flex;
-     flex-direction: column;
-     gap: 10px;
-
+.cats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.cat{
-     
-     font-size: 20px;
-     font-weight: 300;
-     padding: 5px;
-     cursor: pointer;
+.cat {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.searchInput{
-     padding: 10px;
-     width: 200px;
-     border: 1px solid gray;
+.searchInput {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid gray;
 }
-.products{
-     display: flex;
-     flex-wrap: wrap;
-     gap: 10px;
-     
-}
-
-
-.product{
-     width: 253px;
-     display: flex;
-     flex-direction: column;
-     gap: 20px;
-    align-items: center;
-    cursor: pointer;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-img{
-     width: 100%;
-     height: 216px;
-     object-fit: contain;
-     cursor: pointer;
+.product {
+  width: 253px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
 }
-.name{
-     font-weight: 300;
+
+img {
+  width: 100%;
+  height: 216px;
+  object-fit: contain;
+  cursor: pointer;
 }
-.priceRange{
-     cursor: pointer;
+.name {
+  font-weight: 300;
 }
-.priceText{
-     margin-bottom: 30px;
+.priceRange {
+  cursor: pointer;
+}
+.priceText {
+  margin-bottom: 30px;
 }
