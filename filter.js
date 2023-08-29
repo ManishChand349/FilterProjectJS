@@ -41,6 +41,13 @@ const data = [
     price: 600,
     cat: "Premium",
   },
+   {
+    id: 7,
+    name: "Twill overshirt",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F7e%2Fdd%2F7eddd2915739c10b4ec1b19e940dc03075058283.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_shirtjackets%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price: 33,
+    cat: "Shirt",
+  },
 ];
 
 const productsContainer = document.querySelector(".products");
