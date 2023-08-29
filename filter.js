@@ -1,52 +1,52 @@
 const data = [
   {
     id: 1,
-    name: "Chronograph Analogue  ",
-    img: "https://m.media-amazon.com/images/I/61EaZ-1IcmL._AC_UL400_.jpg",
-    price: 1200,
-    cat: "Premium",
+    name: "Relaxed Fit Hoodie",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fa8%2Fa7%2Fa8a78bf0866b3ef7e32d1608f5e3d26f3ed5c52b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B3%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price: 1499,
+    cat: "Hoodie",
   },
   {
     id: 2,
-    name: "Dial Chronograph,Analog ",
-    img: "https://m.media-amazon.com/images/I/61J5Ml6tJJL._AC_UL400_.jpg",
-    price: 100,
-    cat: "Premium",
+    name: "Straight Regular Jeans",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F83%2F91%2F839161d3d8ea1f78bdb530cb705fff16b7c15092.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jeans_regular%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price: 1799,
+    cat: "Jeans",
   },
   {
     id: 3,
-    name: "Edifice Chronograph",
-    img: "https://m.media-amazon.com/images/I/61o81olOLOL._AC_UL400_.jpg",
-    price: 300,
-    cat: "Dress",
+    name: "Relaxed Fit Flannel shirt",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F6b%2Fec%2F6becf84f5c26f3573a4dfc177db2fc4d0990ddcc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price: 1999,
+    cat: "Shirt",
   },
   {
     id: 4,
-    name: "VILEN Edific",
-    img: "https://m.media-amazon.com/images/I/71eBNOs+ZAL._AC_UL400_.jpg",
-    price: 50,
-    cat: "Dress",
+    name: "Regular Fit Ripstop cargo trousers",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F15%2F1c%2F151c16bb5aafe7e0660a812229382e5f43af9dd8.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price: 2999,
+    cat: "Trousers",
   },
   {
     id: 5,
-    name: "Analog Blue",
-    img: "https://m.media-amazon.com/images/I/61GLIs+hmHL._AC_UL400_.jpg",
-    price: 500,
-    cat: "Premium",
+    name: "Regular Fit Round-neck T-shirts",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fb4%2F2f%2Fb42f8aa4f6b4ba829cca3465b795889d9d0db483.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price: 399,
+    cat: "T-shirts",
   },
   {
     id: 6,
-    name: "Analog Blue",
-    img: "https://m.media-amazon.com/images/I/61GLIs+hmHL._AC_UL400_.jpg",
-    price: 600,
-    cat: "Premium",
+    name: "Relaxed Fit Sweatshirt",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fac%2Fe2%2Face22b9fd9ff6b547f773ac2e97194cb4a935493.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_sweatshirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price: 799,
+    cat: "Sweatshirt",
   },
    {
     id: 7,
     name: "Twill overshirt",
     img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F7e%2Fdd%2F7eddd2915739c10b4ec1b19e940dc03075058283.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jacketscoats_shirtjackets%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
-    price: 33,
-    cat: "Shirt",
+    price: 2600,
+    cat: "Overshirt",
   },
 ];
 
@@ -64,7 +64,7 @@ const displayProducts = (filteredProducts) => {
           <div class="product">
                          <img src=${product.img} alt="">
                          <span class="name">${product.name}</span>
-                         <span class="priceText">$${product.price}</span>
+                         <span class="priceText">₹${product.price}</span>
                     </div>
 
           `
@@ -118,10 +118,10 @@ const setPrice = () => {
   priceRange.min = minPrice;
   priceRange.max = maxPrice;
   priceRange.value = maxPrice;
-  priceValue.textContent = "$" + maxPrice;
+  priceValue.textContent = "₹" + maxPrice;
 
   priceRange.addEventListener("input", (e) => {
-    priceValue.textContent = "$" + e.target.value;
+    priceValue.textContent = "₹" + e.target.value;
     displayProducts(data.filter((item) => item.price <= e.target.value));
   });
 };
