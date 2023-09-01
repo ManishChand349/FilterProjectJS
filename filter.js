@@ -48,6 +48,27 @@ const data = [
     price: 2600,
     cat: "Overshirt",
   },
+  {
+    id: 8,
+    name: "Relaxed Fit Appliquéd sweatshirt",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F4e%2F59%2F4e59a0b115fd3abb80587f876508fccd91ce6af4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_sweatshirts%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price:  1499,
+    cat: "Sweatshirt",
+  },
+  {
+    id: 9,
+    name: "Oversized Fit Cotton hoodie",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F29%2F51%2F2951a4a66185cabc3a3b76d2bf1985f508c5b99b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price:  2699,
+    cat: "Hoodie",
+  },
+  {
+    id: 10,
+    name: "Oversized Fit Cotton hoodie",
+    img: "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fa4%2F2d%2Fa42d878e43dd7b4f98fa0e29c666370ae53b3616.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    price:  2699,
+    cat: "Hoodie",
+  },
 ];
 
 const productsContainer = document.querySelector(".products");
@@ -64,7 +85,7 @@ const displayProducts = (filteredProducts) => {
           <div class="product">
                          <img src=${product.img} alt="">
                          <span class="name">${product.name}</span>
-                         <span class="priceText">₹${product.price}</span>
+                         <span class="priceText">₹ ${product.price}</span>
                     </div>
 
           `
